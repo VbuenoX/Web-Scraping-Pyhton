@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2; URL=Index.html">
+    <title>Teste WebServer Kinross</title>
+</head>
+<body>
+    <br>
+    <table border="1" class="cond_hora">
+        <caption><b>COLETA A CADA HORA</b></caption>
+        <thead >
+            <tr>
+                <th rowspan="2"><b>Index</b></th>
+                <th rowspan="2"><b>Data</b></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="bit_col"> <!--Bit Condicional Coletar Primeiro-->
+                <td>Generate Counter Operation Data</td>
+                <td align="center">1</td>
+            </tr>
+            <tr>
+                <td>Dipper Load Sum</td>
+                <td align="center">:="DB5001".STQ_DIPPER_LOAD_SUM:</td>
+            </tr>
+            <tr>
+                <td>Dipper Load Average</td>
+                <td align="center">:="DB5001".STQ_DIPPER_LOAD_AVG:</td>
+            </tr>
+            <tr>
+                <td>Dipper Load Maximum</td>
+                <td align="center">:="DB5001".STQ_DIPPER_LOAD_MAX:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 1 Average</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME1_AVG:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 1 Maximum</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME1_MAX:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 1 Minimum</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME1_MIN:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 2 Average</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME2_AVG:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 2 Maximum</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME2_MAX:</td>
+            </tr>
+            <tr>
+                <td>Cycle Time 2 Minimum</td>
+                <td align="center">:="DB5001".STQ_CYCLE_TIME2_MIN:</td>
+            </tr>
+            <tr>
+                <td>Swing Angle Calculated Average</td>
+                <td align="center">:="DB5001".STQ_SWG_ANG_CALC_AVG:</td>
+            </tr>
+            <tr>
+                <td>Swing Angle Calculated Maximu</td>
+                <td align="center">:="DB5001".STQ_SWG_ANG_CALC_MAX:</td>
+            </tr>
+            <tr>
+                <td>Swing Angle Calculated Minimum</td>
+                <td align="center">:="DB5001".STQ_SWG_ANG_CALC_MIN:</td>
+            </tr>
+            <tr>
+                <td>Front-Rear Level Maximum</td>
+                <td align="center">:="DB5001".STQ_FR_LEVEL_MAX:</td>
+            </tr>
+            <tr>
+                <td>Front-Rear Level Minimum</td>
+                <td align="center">:="DB5001".STQ_FR_LEVEL_MIN:</td>
+            </tr>
+            <tr>
+                <td>Side-Side Level Maximum</td>
+                <td align="center">:="DB5001".STQ_SS_LEVEL_MAX:</td>
+            </tr>
+            <tr>
+                <td>Side-Side Level Minimum</td>
+                <td align="center">:="DB5001".STQ_SS_LEVEL_MIN:</td>
+            </tr>
+            <tr>
+                <td>Cycles Sum</td>
+                <td align="center">:="DB5001".STQ_CYCLES_SUM:</td>
+            </tr>
+            <tr>
+                <td>Dipper Trip Sum</td>
+                <td align="center">:="DB5001".STQ_DIPPER_TRIP_SUM:</td>
+            </tr>
+            <tr>
+                <td>Stall Level 1 Sum</td>
+                <td align="center">:="DB5001".STQ_STALL_LEVEL1_SUM:</td>
+            </tr>
+            <tr>
+                <td>Stall Level 2 Sum</td>
+                <td align="center">:="DB5001".STQ_STALL_LEVEL2_SUM:</td>
+            </tr>
+            <tr>
+                <td>Stall Level 3 Sum</td>
+                <td align="center">:="DB5001".STQ_STALL_LEVEL3_SUM:</td>
+            </tr>
+            <tr>
+                <td>Boom Jack Sum</td>
+                <td align="center">:="DB5001".STQ_BOOM_JACK_SUM:</td>
+            </tr>
+            <tr>
+                <td>In-Bank Swing Sum</td>
+                <td align="center">:="DB5001".STQ_INBANK_SWG_SUM:</td>
+            </tr>
+            <tr>
+                <td>Overload Sum</td>
+                <td align="center">:="DB5001".STQ_OVERLOAD_SUM:</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <table border="1" class="cont_seg">
+        <caption><b>COLETA CONTÍNUA</b></caption>
+        <thead >
+            <tr>
+                <th rowspan="2"><b>Index</b></th>
+                <th rowspan="2"><b>Data</b></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Transformer 1 Temperature</td>
+                <td align="center">:="DB4001".XFMR1_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Transformer 2 Temperature</td>
+                <td align="center">:="DB4001".XFMR2_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Speed</td>
+                <td align="center">:="DB4001".HST_SPD:</td>
+            </tr>
+            <tr>
+                <td>Hoist Torque</td>
+                <td align="center">:="DB4001".HST_TRQ:</td>
+            </tr>
+            <tr>
+                <td>Hoist Iw</td>
+                <td align="center">:="DB4001".HST_Iw:</td>
+            </tr>
+            <tr>
+                <td>Hoist Kw</td>
+                <td align="center">:="DB4001".HST_KW:</td>
+            </tr>
+            <tr>
+                <td>Hoist Speed Reference</td>
+                <td align="center">:="DB4001".HST_SPD_REF:</td>
+            </tr>
+            <tr>
+                <td>Hoist Motor Temperature</td>
+                <td align="center">:="DB4001".HST_MOT_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Crowd Extension</td>
+                <td align="center">:="DB4001".CRD_EXT:</td>
+            </tr>
+            <tr>
+                <td>Hoist Rope Length</td>
+                <td align="center">:="DB4001".HST_ROPE_LENGTH:</td>
+            </tr>
+            <tr>
+                <td>Swing Angle</td>
+                <td align="center">:="DB4001".SWG_ANGLE:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 1 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD1_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 2 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD2_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 3 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD3_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 4 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD4_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 5 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD5_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 6 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD6_TEMP:</td>
+            </tr>
+            <tr>
+                <td>IGBT Module 7 Temperature</td>
+                <td align="center">:="DB4001".IGBT_MOD7_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Drum Right Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_Drum_R_B_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Drum Left Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_Drum_L_B_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist UP in Pinion Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_Up_IP_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Low in Pinion Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_Low_IP_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Motor Right Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_MTR_R_B_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Motor Left Bearing Temperature</td>
+                <td align="center">:="DB4001".HST_MTR_L_B_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Gearcase Oil Temperature</td>
+                <td align="center">:="DB4001".HST_GC_Oil_TEMP:</td>
+            </tr>
+            <tr>
+                <td>Hoist Gearcase Oil Pressure Transmitter</td>
+                <td align="center">:="DB4001".HST_GC_Oil_PRESS:</td>
+            </tr>
+            <tr>
+                <td>Crowd Speed</td>
+                <td align="center">:="DB4001".CRD_SPD:</td>
+            </tr>
+            <tr>
+                <td>Crowd Torque</td>
+                <td align="center">:="DB4001".CRD_TRQ:</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
